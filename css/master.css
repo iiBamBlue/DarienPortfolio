@@ -1,0 +1,138 @@
+/* General Body Styles */
+body {
+  background-color: #f5f5dc; /* Light Beige */
+  font-family: "Roboto", sans-serif;
+  color: #333333; /* Neutral dark text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #b2dfdb; /* Soft Teal */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #b2dfdb; /* Soft Teal */
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #ff7f50; /* Coral hover effect */
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+}
+h2 {
+  color: #317d76; /* Dark Teal */
+}
+p {
+  color: #333333; /* Neutral dark text */
+}
+
+/* Buttons */
+button {
+  position: relative;
+  overflow: hidden;
+}
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc0cb; /* Blush Pink */
+  transition: left 0.5s ease-in-out;
+  z-index: -1;
+}
+button:hover::before {
+  left: 0;
+}
+
+/* Timeline Styling */
+.timeline-item {
+  padding: 15px;
+  border-left: 4px solid #008080; /* Teal */
+  margin: 15px 0;
+}
+.timeline-item h3 {
+  color: #ff7f50; /* Coral */
+}
+
+/* Project Section */
+#github-projects {
+  padding: 40px;
+  background-color: #f5f5dc; /* Light Beige */
+}
+
+#github-projects .project {
+  border: 1px solid #ffc0cb; /* Blush Pink */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#github-projects img {
+  width: 50%; /* Adjust the width to 50% of the container */
+  max-width: 400px; /* Set a maximum width for smaller screens */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 5px; /* Rounded corners for a polished look */
+  margin: 10px auto; /* Center the image */
+  display: block; /* Ensure the image is centered */
+}
+
+#github-projects ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#github-projects h3 a {
+  color: #ff7f50; /* Coral */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#github-projects h3 a:hover {
+  color: #ffc0cb; /* Blush Pink hover */
+}
+
+/* Footer */
+footer {
+  background-color: #b2dfdb; /* Soft Teal */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* Links */
+a {
+  color: #ff7f50; /* Coral for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ffc0cb; /* Blush Pink hover effect */
+}
